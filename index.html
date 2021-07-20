@@ -70,6 +70,13 @@
          }
          p {margin-left: 50px;
         font-size: large;}
+
+        fieldset {margin-left: 50px; margin-right: 50px;
+
+        }
+
+        input {margin-left: 50px; font-size: large;
+        }
         </style>
     </head>
    
@@ -117,7 +124,32 @@
         <li>fazer dever</li>
         <li>mimir</li>
     </ol>
+    <h2> Quem está visistando a página?</h2>
+    <fieldset>
+     <legend> qual a nossa relação?</legend>
+        <select name="relacao" id="">
+            <option value="familia">familiar</option>
+            <option value="amigo">amigo(a)</option>
+            <option value="professor">professor(a)</option>
+            <option value="nenhum">nehuma</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Você programa?</legend>
+        <input type="radio" name="programa" value="sim"> sim
+        <input type="radio" name="programa" value="nao"> não
+    </fieldset>
+    <fieldset>
+        <legend>Se sim, em quais dessas linguagens você costuma programar?</legend>
+        <input type="checkbox" name="linguagens" value="HTML"> HTML
+        <input type="checkbox" name="linguagens" value="CSS"> CSS
+        <input type="checkbox" name="linguagens" value="Java"> Java Script
+        <input type="checkbox" name="linguagens" value="Python"> Python
+        <input type="checkbox" name="linguagens" value="Outras"> Outra (s)
+        <input type="checkbox" name="linguagens" value="Nenhuma"> Não programo
+    </fieldset>
+    <input type="text" name="opniao" placeholder="Sugestões e opniões">
     <h2 id="evolução">Acompanhe a minha evolução</h2>
     <p>Esta foi a <a href="primeira versão.html">primeira versão </a>  desta página</p>
-</body>
+  </body>
 </html>
