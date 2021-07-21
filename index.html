@@ -4,80 +4,8 @@
         <title>
             Ian Luiz Mendonça Fracalossi
         </title>
-    
-        <style type="text/css">
-        body{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-              color: #88F2F2 ; 
-              margin: 0px;
-              background-color:#0D2340;
-    }
-        h1 { color: orange;
-        }
-        h2{ color: #0AA696;
-            margin-left: 50px;
-        }
-        header{
-            background-image: url(fundo.jpg);
-            background-size: 100%;
-            height: 300px;
-          background-repeat: no-repeat;
-         }
-         header h1{
-             top: 85%;
-             position: relative;
-             margin: 0px;
-             margin-left: 50px;
-         }
-         a { text-decoration: none;
-         font-weight: bolder;
-         color: #88F2F2 ;
-         }
-         a:hover{
-             color: #1BF2CB;
-         }
-         nav ul{
-             list-style-type: none;
-             background-color: #165873;
-             margin: 0px;
-             height: 50px;
-         }
-         nav li{
-             display: inline-block;
-             margin-right: 220px;
-             font-size: x-large;
-             background-color: #165873;
-             top: 30%;
-             position: relative;
-         }
-         img{
-             height: 480px;
-             width: 360px;
-         }
-         figure{
-             position: relative;
-             margin-left: 40%;
-         }
-         ol {
-             list-style-type: upper-roman;
-             margin-left: 50px;
-             font-size:large;
-         }
-
-         ul {
-             list-style-type:circle;
-             margin-left: 50px; 
-             font-size: large;
-         }
-         p {margin-left: 50px;
-        font-size: large;}
-
-        fieldset {margin-left: 50px; margin-right: 50px;
-
-        }
-
-        input {margin-left: 50px; font-size: large;
-        }
-        </style>
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"> 
+       
     </head>
    
    <body>
@@ -128,6 +56,7 @@
     <fieldset>
      <legend> qual a nossa relação?</legend>
         <select name="relacao" id="">
+            <option value="" selected disabled> Selecione</option>
             <option value="familia">familiar</option>
             <option value="amigo">amigo(a)</option>
             <option value="professor">professor(a)</option>
@@ -148,7 +77,9 @@
         <input type="checkbox" name="linguagens" value="Outras"> Outra (s)
         <input type="checkbox" name="linguagens" value="Nenhuma"> Não programo
     </fieldset>
-    <input type="text" name="opniao" placeholder="Sugestões e opniões">
+    <textarea rows="5" style="width: 60em;" name= opniao placeholder="Sugestões e opniões"></textarea>
+    <br>
+    <button type= "submit" id="botao"> Enviar </button>
     <h2 id="evolução">Acompanhe a minha evolução</h2>
     <p>Esta foi a <a href="primeira versão.html">primeira versão </a>  desta página</p>
   </body>
