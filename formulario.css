@@ -3,6 +3,7 @@ fieldset {
     border-style: dashed;
     width: fit-content;
     margin-left: 50px; margin-right: 50px; margin-bottom: 2px;
+    border-radius: 5px;
 }
     
 input, textarea, select, button {
