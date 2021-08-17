@@ -5,12 +5,19 @@
             Ian Luiz Mendonça Fracalossi
         </title>
         <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"> 
-       
+        <script>
+            function tamanho(size) {
+                h1 = document.querySelector('h1');
+                h1.style.fontSize = size;
+            }
+        </script>
     </head>
    
    <body>
        <header>
-         <h1> Ian Fracalossi </h1>
+         <h1> Ian Fracalossi  <button onclick="tamanho('medium')">-</button> <button onclick="tamanho('xxx-large')">+</button></h1>  
+            
+            
        </header>
      <nav>
       <ul>
