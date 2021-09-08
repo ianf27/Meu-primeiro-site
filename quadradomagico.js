@@ -1,17 +1,15 @@
-// tenho que perguntar qual o tamanho q o usuário quer
-
-
-const ordem = 3;
-// "ordem" vai passar a ser o valor que o usuário escolher
-
-const matriz = Array(ordem);
+//passa as variáveis para let
+let ordem = 0;
+let matriz = Array(ordem);
 for (let i=0; i<matriz.length; i++) {
     matriz[i] = Array(ordem);
 }
-const somaNumeros = ((1 + (ordem ** 2)) * ordem) / 2 ;
+let somaNumeros = ((1 + (ordem ** 2)) * ordem) / 2 ;
 
 document.addEventListener('DOMContentLoaded', () => {
-    insereTabela();
+    //chamei a função que pergunta a quantidade de quadrados
+    perguntaTamanho();
+    ;
 });
 
 function insereTabela() {
@@ -30,6 +28,30 @@ function insereTabela() {
     }
 }
 
+function perguntaTamanho() {
+    const div = document.createElement("div");
+    // cria o input
+    div.innerHTML = `
+    <input class= "pergunta"> <- Digite qual a proporção você deseja no seu quadrado: 3, 4 ou 5 </input> `;
+    document.body.append(div);
+    const input = document.querySelector('input')
+    input.addEventListener('change', ()=> {
+        // modifica o valor da ordem (passa a ser o valor do input), da matriz e da soma dos números
+        ordem =  parseInt(input.value)
+        matriz = Array(ordem)
+        for (let i=0; i<matriz.length; i++) {
+            matriz[i] = Array(ordem);
+        }
+        somaNumeros = ((1 + (ordem ** 2)) * ordem) / 2 
+        //insere a tabela
+        insereTabela()
+        div.remove()
+    })
+    
+    
+    
+}
+
 function getLinhaColuna(celula) {
     const [linha,coluna] = celula.id.split('col');
     return [linha.split('lin')[1], coluna];
@@ -45,9 +67,11 @@ function insereInput(celula) {
         const quadradoCompleto = verificaMatriz();
         if (quadradoCompleto) {
             document.querySelector('#quadradomagico').classList.add('vitoria');
+            //bloqueia o input
             document.querySelectorAll('input').forEach(input => {
                 input.readOnly = true;
             });
+            //chama a função que insere o botão de reiniciar e a mensagem
             inserirbotoesemensagem()
             
         } else {
