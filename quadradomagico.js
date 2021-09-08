@@ -1,9 +1,14 @@
+// tenho que perguntar qual o tamanho q o usuário quer
+
+
 const ordem = 3;
+// "ordem" vai passar a ser o valor que o usuário escolher
+
 const matriz = Array(ordem);
 for (let i=0; i<matriz.length; i++) {
     matriz[i] = Array(ordem);
 }
-const somaNumeros = 15;
+const somaNumeros = ((1 + (ordem ** 2)) * ordem) / 2 ;
 
 document.addEventListener('DOMContentLoaded', () => {
     insereTabela();
@@ -40,6 +45,11 @@ function insereInput(celula) {
         const quadradoCompleto = verificaMatriz();
         if (quadradoCompleto) {
             document.querySelector('#quadradomagico').classList.add('vitoria');
+            document.querySelectorAll('input').forEach(input => {
+                input.readOnly = true;
+            });
+            inserirbotoesemensagem()
+            
         } else {
             document.querySelector('#quadradomagico').classList.remove('vitoria');
         }
@@ -60,6 +70,18 @@ function verificaSomas() {
     const todasColunasOK = verificaSomaColunas();
     return diagonalPrincpalOK && diagonalSegundariaOK && todasLinhasOK && todasColunasOK;
 }
+
+//essa é função q cria botão para reiniciar
+function inserirbotoesemensagem() {
+    div = document.createElement("div");
+    div.innerHTML = `
+    <button onclick =  location.reload() > Reiniciar </button> 
+    <h2> VOCÊ NÃO MERECE PALMAS, VOCÊ MERECE O TOCANTINS TODO!!!! <br> CLIQUE EM "REINICIAR" PARA JOGAR NOVAMENTE </h2>`;
+    document.body.append(div);
+    
+}
+
+
 
 function verificaSomaColunas() {
     let todasColunasOK = true;
@@ -204,3 +226,5 @@ function removeClasseCelula(classe, i, j) {
     const celula = document.querySelector(`#lin${i}col${j}`);
     celula.classList.remove(classe);
 }
+
+
