@@ -11,28 +11,33 @@
                 h1.style.fontSize = size;
             }
         </script>
-        <script src="java_index.js"></script>
+
     </head>
    
    <body>
        <header>
-        <h1> <button onclick="tamanho('medium')">-</button> <button onclick="tamanho('xxx-large')">+</button>   Ian Fracalossi  </h1>  
+        <h1> Ian Fracalossi  </h1>  
             
             
        </header>
-     <nav>
+       <nav>
       <ul>
-       <li> <a href="#Objetivo da página"> Sobre mim </a> </li>
-       <li> <a href="#Disciplina"> Cursando </a> </li>
-       <li> <a href="#Hobbies"> Hobbies </a> </li>
-       <li> <a href="#Rotina"> Rotina </a> </li>
-       <li> <a href="#evolução"> Acompanhe a minha evolução</a></li>
+       <li > <a href="#Objetivo da página" class="cabeçalho"> Sobre mim </a> </li>
+       <li > <a href="#Disciplina" class="cabeçalho"> Cursando </a> </li>
+       <li > <a href="#Hobbies" class="cabeçalho"> Hobbies </a> </li>
+       <li > <a href= "#posters" class="cabeçalho"> Meus Gostos </a> </li>
+       <li > <a href="#evolução" class="cabeçalho"> Acompanhe a minha evolução</a></li>
+      
     </nav>
       </ul>
-      <figure>
-          <img src="ian_capa_site.jpg">
-          <figcaption> Este sou eu </figcaption>
+      <a href="https://www.instagram.com/ianfracalossi/?hl=pt-br">
+      <figure class="capa">
+          <img class="image" src="ian_capa_site.jpg" >
+          <div class="overlay">
+                <div class="text"> Este sou eu</div>
+          </div>
       </figure>
+    </a>
      <h2 id="Objetivo da página"> Sobre mim</h2>
       <p> Tenho 16 anos e estou no segundo ano do ensino médio. 
          <br> Sou apaixonado por futebol e por comunicação. </p>
@@ -42,24 +47,15 @@
     <ul>
         <li>jogar futebol</li>
         <li>assistir vídeos do <a href="http://www.youtube.com/">Youtube</a> </li>
-        <li>cozinhar</li>
+        <li>De vez em quando posto umas paradas no <a href="https://www.tiktok.com/@ianfracalossi?lang=pt-BR"> TikTok</a></li>
         <li>acompanhar e estudar futebol</li>
     </ul>
-    <h2 id="Rotina">Rotina</h2>
-    <ol>
-        <li>café da manhã</li>
-        <li>estudar</li>
-        <li>gravar vídeos</li>
-         <ul>
-         <li> aproveita e me segue aí no<a href="https://www.tiktok.com/@ianfracalossi?lang=pt-BR">TikTok</a></li>
-         </ul>
-        <li>fazer o almoço e almoçar</li>
-        <li>malhar</li>
-        <li>estudar</li>
-        <li>jogar bola</li>
-        <li>fazer dever</li>
-        <li>mimir</li>
-    </ol>
+    <h2>Meus Gostos</h2>
+    <div id="posters"> 
+        <script src="lista_site_posters.js"></script>
+         
+    </div> 
+    <button type="submit" id= "voltar" onclick="voltar()" > voltar </button> <button type="submit" id="mais" onclick="mais()"> mais </button>
     <h2> Quem está visistando a página?</h2>
     <fieldset>
      <legend> Qual a nossa relação?</legend>
