@@ -1,3 +1,5 @@
+console.log("PÁGINA FEITA PELO MAIOR PROGRAMDOR DE TODOS OS TEMPOS, IAN FRACALOSSI")
+
 var listaFilmes = [
     "https://s2.glbimg.com/HtKsPZuC6NdgEKFv48TVRyJ2SV4=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/4/z/AqfvaPQfmR39ON8WQ31g/eas-fifa22-gen4-se-crop-1080x1350.png",
     "https://t.ctcdn.com.br/rfPvQZQ0OVXD_vFr89mna408to0=/660x0/smart/i203631.jpeg", 
@@ -36,10 +38,10 @@ var listaLinks = [
     "https://www.google.com/search?q=the+modern+family&sxsrf=AOaemvLabLEbf6Lsy4Q-K8wFxO6-t2ATLA%3A1632407664455&ei=cJBMYbaWG5665OUP-cOckAk&oq=the+modern+family&gs_lcp=Cgdnd3Mtd2l6EAMyCwguEIAEELEDEJMCMgUIABCABDIFCAAQgAQyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgcIIxDqAhAnOgcILhDqAhAnOgQIIxAnOgQILhBDOgQIABBDOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQxwEQrwE6BAguECc6CAguEIAEELEDOgsILhCABBCxAxCDAToLCAAQgAQQsQMQgwE6BQguEIAEOgcILhAnEJMCOgoILhCxAxCDARBDOgcILhCxAxBDOg0ILhCxAxCDARBDEJMCOggILhCxAxCDAUoECEEYAFCopgFYprsBYOfEAWgCcAJ4AIAB8gGIAd4SkgEGMC4xNi4xmAEAoAEBsAEKwAEB&sclient=gws-wiz&ved=0ahUKEwi2jt-3qJXzAhUeHbkGHfkhB5IQ4dUDCA4&uact=5",
     
 ]
-//respectivamente: FIFA, ULTIMATO, COCO, OS INCRIVEIS, ARANHAVERSO, Rick and Morty, Flamengo, B99, Neymar e Casimiro
+//respectivamente: FIFA, ULTIMATO, COCO, OS INCRIVEIS, ARANHAVERSO, Rick and Morty, Flamengo, B99, Neymar , Casimiro , Desimpedidos, Jordan, invincible, the office, the modern family
 
 var listaNomes = [
-    "FIFA", "VINGADORES ULTIMATO" , "VIVA - A VIDA É UMA FESTA" , "OS INCRÍVEIS" , "HOMEM ARANHA NO ARANHAVERSO" , "RICK AND MORTY" , "MENGÃO" , "B99" , "ADULTO NEY" , "CASIMIRO"
+    "FIFA", "VINGADORES ULTIMATO" , "VIVA - A VIDA É UMA FESTA" , "OS INCRÍVEIS" , "HOMEM ARANHA NO ARANHAVERSO" , "RICK AND MORTY" , "MENGÃO" , "B99" , "ADULTO NEY" , "CASIMIRO" , "Desimpedidos", "Jordan", "invincible", "the office", "the modern family",
 ]
 
 var secaoPosters = document.getElementById("posters")
